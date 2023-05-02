@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container principal">
+        <div class="container__caixa">
+            <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
+            <img class="container__imagem" src="/img/Combo.png" alt="O combo+ é a junção do alura+ e o alura lingua">    
+            <a class="container__botao">Assine por 12x de R$ 120,00*</a>
+            <a class="container__botao container__botao__secundario">Assinar somente o Alura+</a>
+            <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>                
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <img class="secundario__image" src="img/Plataforma.png" alt="Monitor e celular alura">
+        <div class="secundario__descricao">
+            <h2 class="secundario__descricao__titulo">Assista do seu jeito</h2>
+            <p class="secundario__descricao__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="secundario__descricao">
+            <p class="secundario__descricao__texto">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia e aprender inglês ou espanhol, onde e como quiser.</p>
+            <a  class="container__botao secundario__descricao__botao" href="www.alura.com.br">Assine o Combo+</a>   
+        </div>
+        <img src="img/Telas.png" alt="Alura línguas mais alura cursos" class="secundario__image">
+    </section>
+
+    <section class="container secundario">
+        <img src="img/Notebook.png" alt="Nootbook para baixar os cursos da alura">
+        <div class="secundario__descricao">
+            <h2 class="secundario__descricao__titulo">Baixe seus cursos</h2>
+            <p class="secundario__descricao__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
+        </div>
+    </section>
+
+    <section class="dispositivos">
+        <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos</h2>
+        <ul class="dispositivos__lista">    
+            <li>
+                <img src="img/tv.png" alt="Televisão">
+                <h3 class="dispositivos__lista__titulo">TV</h3>
+            </li>
+            <li>
+                <img src="img/computador.png" alt="Computadores">
+                <h3 class="dispositivos__lista__titulo">Computadores</h3>
+            </li>
+            <li>
+                <img src="img/celular.png" alt="Celulares e tablets">
+                <h3 class="dispositivos__lista__titulo">Celulares e tablets</h3>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="rodape">
+        <img src="img/Logo.png" alt="Alura+" class="rodape__logo">
+        <ul class="rodape__lista">
+            <li class="rodape__lista__item">
+                <a class="lista__link" href="#">Idioma</a>
+            </li>
+            <li class="rodape__lista__item">
+                <a class="lista__link" href="#">Dispositivos compatíveis</a>
+            </li>
+            <li class="rodape__lista__item">
+                <a class="lista__link" href="#">Contrato de assinatura</a>
+            </li>
+            <li class="rodape__lista__item">
+                <a class="lista__link" href="#">Politica de privacidade</a>
+            </li>
+            <li class="rodape__lista__item">
+                <a class="lista__link" href="#">Proteção de dados no Brasil</a>
+            </li>
+            <li class="rodape__lista__item">
+                <a class="lista__link" href="#">Anuncios personalizados</a>
+            </li>
+            <li class="rodape__lista__item">
+                <a class="lista__link" href="#">Ajuda</a>
+            </li>
+        </ul>
+        <p class="rodape__texto">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+        <p class="rodape__texto">Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
+    </footer>
+
+</body>
+</html>
+
+<!--
+
+1 - Trabalhando com Imagens
+
+    => Tag IMG deve ser usada quando a imagem tiver valor semântico da tela
+
+    => Background-image deve ser usado quando for apenas decorativo
+
+    => CSS background-image
+
+        => especifica uma imagem de fundo para um elemento
+
+        =>  background-image: url("paper.gif");
+
+    => CSS background-repeat
+
+        => Por padrão, background-image property repeats an image both horizontally and vertically.
+
+        => Esse atributo te permitir repetir no eixo desejado ou não repetir 
+
+    => CSS background-attachment
+
+        => The background-attachment property specifies whether the background image should scroll or be fixed
+
+    => CSS background-size
+    
+        => Specifies the size of the background image(s)
+
+            => "auto"	Default value. The background image is displayed in its original size
+
+            => "contain"	Resize the background image to make sure the image is fully visible
+
+            => "cover"	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+
+
+2 - Links e Buttons
+
+    => Use o link (âncora) quando o click tiver finalidade de navegação
+
+    => Use Button quando o click tiver finalidade de executar uma função, exemplo: enviar, deletar
+
+    => Dividir o container em grid p botão ficar a esquerda
+
+        => display: grid; container vira uma grid
+        => grid-template-columns: 50% 50%; númeor de colunas e quanto cada uma ocupará
+
+3 - Trabalhando com Espaçamentos
+
+    => Margin - margin externa, entre elementos
+
+    => Padding - margin interna, entro o elemento e seu conteúdo
+
+=> Alinhamentos
+
+    => alingn-item - alinha os elementos filhos dentro do seu pai
+        => quando usado num container grid, alinhará no centro do mesmo. Evitando o uso de espaçamento
+    
+    => text-align - alinha os textos e imagens
+
+    => Propriedade Display
+
+        => display: inline = elemento fica na mesma linha enquanto tiver espaço
+        => display: block = elemento ocupará, sozinho, a linha toda e terá o tamanho da mesma
+        => display: inline-block = elemento ocupará uma linha toda, mas só usará o tamanho que precisa. Pode aplicar as propriedades widht e height
+
+=> FLEXBOX Layout
+
+    => Permite fazer layout responsivos sem usar float e position
+
+    => Elementos FLEXBOX
+
+        => Flex Container (pai)
+
+        => Flex Itens (fihlos diretos)
+
+        => Main Axis e Cross Axis (perpendicular to the main-axis)
+
+    =>  display: flex;
+
+        => Transformar o container pai em um Flex Container
+
+    => Propriedades Flex Container
+
+        => flex-direction
+
+            => Define a direção dos flex itens
+
+            => row, column, column-reverse
+
+        => flex-wrap
+
+            => Define se os flex itens ficarão todos na mesma linha ou não.
+
+            => flex-wrap: nowrap | wrap | wrap-reverse;
+
+        => flex-flow
+
+            => Atalho para as propriedades flex-direction e flex-wrap
+
+            => flex-flow: row wrap;
+    
+        => justify-content
+
+            => Define como os flex itens ficarão alinhados ao longo do eixo principal (main axis).
+
+            => justify-content: flex-start (default) | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+    
+        => align-items
+
+            => Define como os flex items ficarão organizados em relação ao cross--axis
+            
+            => align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+
+        => align-content
+
+            => Alinha as linhas dentro do Flex Container quando temos espaço extra dentro dele 
+
+
+    => Uma pseudo-classe CSS é uma propriedade que é adicionada ao final dos seletores que especifica o estado que esse elemento está
+    
+            seletor:pseudo-classe {
+                propriedade: valor;
+            }
+    -->
